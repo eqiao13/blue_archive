@@ -51,6 +51,10 @@ message GetCharacterResponse {
     characters_client.Character character = 1;
 }
 
+service CharactersService {
+    rpc GetCharacter(GetCharacterRequest) returns (GetCharacterResponse){}
+}
+
 ```
 
 #### Usages
