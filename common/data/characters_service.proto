@@ -12,5 +12,5 @@ message GetCharacterRequest {
 }
 
 message GetCharacterResponse {
-    blue_archive.data.characters_client.Character character = 1;
+    data.characters_client.Character character = 1;
 }
