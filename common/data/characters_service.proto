@@ -1,0 +1,16 @@
+syntax = "proto3";
+package data.characters_service;
+
+import "common/data/characters_client.proto";
+
+service Characters {
+    rpc getCharacter(GetCharacterRequest) returns (GetCharacterResponse);
+}
+
+message GetCharacterRequest {
+    string name = 1;
+}
+
+message GetCharacterResponse {
+    data.characters_client.Character character = 1;
+}

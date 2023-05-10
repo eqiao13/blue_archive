@@ -1,0 +1,6 @@
+syntax = "proto3";
+package data.characters_client;
+
+message Character {
+    string name = 1;
+}
